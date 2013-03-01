@@ -1,0 +1,1 @@
+$("ul").append("<li><%= j(raw @tweet.text + "&nbsp;" + @tweet.created_at.to_s + "&nbsp;" + link_to( "Edit",edit_tweet_path(@tweet)))%></li>");
